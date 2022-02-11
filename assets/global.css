@@ -13,6 +13,7 @@ p {
 ul {
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 img {
   max-width: 100%;
