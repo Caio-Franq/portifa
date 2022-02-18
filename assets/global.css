@@ -27,6 +27,7 @@ img {
   text-transform: uppercase;
   max-width: 5ch;
 }
+
 @media (max-width: 800px) {
   .subtitulo{
     font-size: 3rem;
