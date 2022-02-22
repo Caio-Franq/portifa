@@ -5,7 +5,7 @@
 
 .formacao .subtitulo{
   color: #000;
-  grid-row: 1/4;
+  max-width: 5ch;
 }
 
 .formacao-texto{
@@ -104,4 +104,34 @@
 .cursos li{
   display: flex;
   justify-content: space-between;
+}
+.formacao-container{
+  position: relative;
+}
+.formacao-container::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(img/detalhe.svg) no-repeat center;
+  position: absolute; /* Elemento filho */
+ bottom: -50px;
+}
+
+@media (max-width: 800px) {
+  .container{
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao .subtitulo{
+    color: #fff;
+  }
+  .formacao-texto{
+    font-size: 1.25rem;
+  }
+  .formacao-extra h3::before{
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
